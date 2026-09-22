@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>TONY</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<style>
+		body {
+			opacity: 0;
+			visibility: hidden;
+			background-color: #000;
+			transition:
+				opacity 0.2s ease 0.2s,
+				visibility 0.2s ease 0.2s;
+		}
+
+		.loaded body {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.hero__brand-title {
+			display: flex;
+			align-items: baseline;
+			justify-content: flex-end;
+			gap: .22em;
+			font-family: "The Godfather", sans-serif;
+			font-size: clamp(2.4rem, 7vw, 7rem);
+			font-weight: 400;
+			line-height: 1;
+			letter-spacing: .055em;
+			text-align: right;
+			text-transform: none;
+			text-shadow: .08em .08em 0 #000, .025em .025em 0 #000;
+			white-space: nowrap;
+		}
+
+		.hero__brand-title span:first-child {
+			color: #fff;
+		}
+
+		.hero__brand-title span:last-child {
+			color: #d70000;
+		}
+
+		.header__logo-text {
+			color: #fff;
+			font-family: "The Godfather", sans-serif;
+			font-size: 3.1rem;
+			letter-spacing: .055em;
+			line-height: .82;
+			text-shadow: .035em .035em 0 #000;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: geometricPrecision;
+			white-space: nowrap;
+		}
+
+		.header__logo {
+			width: auto !important;
+		}
+
+		.footer__brand-text {
+			display: inline-flex;
+			align-items: baseline;
+			gap: .16em;
+			font-family: "The Godfather", sans-serif;
+			font-size: clamp(3rem, 4.2vw, 4.75rem);
+			font-weight: 400;
+			line-height: .85;
+			letter-spacing: .055em;
+			text-shadow: .035em .035em 0 #000;
+			white-space: nowrap;
+		}
+
+		.footer__brand-text span:first-child {
+			color: #fff;
+		}
+
+		.footer__brand-text span:last-child {
+			color: #d70000;
+		}
+
+		.footer__top-logo,
+		.footer__top-mob-logo {
+			width: auto !important;
+		}
+
+		.about__table .tony::before {
+			content: "GIGA INU" !important;
+			width: max-content !important;
+			height: auto !important;
+			aspect-ratio: auto !important;
+			background: none !important;
+			color: #e22f36;
+			font-family: "Adam Warren pro", sans-serif;
+			font-size: 2.15rem;
+			line-height: 1;
+			letter-spacing: .025em;
+			white-space: nowrap;
+			transform: translate(-50%, -50%) !important;
+		}
+
+		.about__table .wolf::before {
+			content: "SHIBA" !important;
+			width: max-content !important;
+			height: auto !important;
+			aspect-ratio: auto !important;
+			background: none !important;
+			color: #e22f36;
+			font-family: "Adam Warren pro", sans-serif;
+			font-size: 2.15rem;
+			line-height: 1;
+			letter-spacing: .025em;
+			white-space: nowrap;
+			transform: translate(-50%, -50%) !important;
+		}
+
+		.header__logo-text span:last-child {
+			color: #d70000;
+			margin-left: .16em;
+		}
+
+		@media (max-width: 47.99875em) {
+			.header__logo-text {
+				font-size: 2.4rem;
+			}
+
+			.footer__brand-text {
+				font-size: 3rem;
+			}
+
+			.hero__brand-title {
+				font-size: clamp(2.8rem, 14vw, 5rem);
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20241206205058" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu-open-bg"></div>
+		<header class="header">
+			<div class="header__container">
+				<a href="../" class="header__logo" aria-label="giga inu">
+					<span class="header__logo-text"><span>giga</span><span>inu</span></span>
+				</a>
+				<div class="header__right">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" data-goto=".about" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" data-goto=".how" class="menu__link">How to buy</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" data-goto=".tokenomics__body" data-goto-top="160" class="menu__link">Tokenomics</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a href="#" target="_blank" class="header__button" data-da=".menu__body, 767.98"><span>Buy now</span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__bg">
+					<img src="img/hero/bg.jpg" alt="BG" />
+				</div>
+				<div class="hero__container">
+					<h1 class="hero__title">
+						<span class="hero__brand-title" aria-label="Giga Inu">
+							<span>giga</span>
+							<span>inu</span>
+						</span>
+					</h1>
+					<div class="hero__actions">
+						<a href="#" target="_blank" class="hero__button">
+							<span>Buy now</span>
+							<i></i>
+						</a>
+						<div class="hero__social">
+							<a href="#" target="_blank" class="hero__social-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42" fill="none">
+									<path d="M36.2199 0.5L43.2278 0.5L27.8608 17.7446L45.7971 41.2058H31.6938L20.6953 26.9748L8.00799 41.2058H0.996322L17.4336 22.7603L0.226556 0.501877L14.6879 0.501877L24.6297 13.5094L36.2199 0.5ZM33.6421 37.0738H37.5249L12.5651 4.41615H8.3985L33.6421 37.0738Z" fill="#FFF7EE" />
+								</svg>
+								<i></i>
+							</a>
+							<a href="https://t.me/TonyOnSui" target="_blank" class="hero__social-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="54" height="44" viewBox="0 0 54 44" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M48.2882 0.299006C48.9374 0.0342521 49.6476 -0.0570596 50.3447 0.0345735C51.0418 0.126207 51.7005 0.397435 52.2522 0.820029C52.8038 1.24262 53.2283 1.80113 53.4814 2.43742C53.7345 3.07372 53.8069 3.76453 53.6912 4.43797L47.6612 39.4562C47.0763 42.8341 43.2505 44.7712 40.0599 43.0886C37.3911 41.681 33.4273 39.5122 29.8627 37.2493C28.0804 36.1165 22.6212 32.4892 23.2988 29.9081C23.8811 27.7012 33.0858 19.408 38.3461 14.4774C40.4108 12.5402 39.4736 11.4228 37.0366 13.2046C30.9847 17.6287 21.269 24.3564 18.0575 26.2502C15.2244 27.9201 13.7486 28.2052 11.9855 27.9201C8.76874 27.4008 5.78624 26.5964 3.35268 25.6164C0.0642268 24.2928 0.234013 19.9043 3.36547 18.6265L48.2882 0.299006Z" fill="#FFF7EE" />
+								</svg>
+								<i></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__bg">
+					<img src="img/about/bg.jpg" alt="BG" />
+				</div>
+				<div class="about__container">
+					<div class="about__image" data-watch-threshold="0.55" data-watch-once data-watch>
+						<img src="img/about/01.png?v=transparent-2" alt="Giga Inu" />
+					</div>
+					<div class="about__content">
+						<h2 class="about__title">About Giga Inu</h2>
+						<div class="about__tables">
+							<table class="about__table" data-watch-threshold="0.85" data-watch-once data-watch>
+								<thead>
+									<tr>
+										<th>Profile</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Name</td>
+										<td class="tony"></td>
+									</tr>
+									<tr>
+										<td>Subject</td>
+										<td class="dec1"></td>
+									</tr>
+									<tr>
+										<td>Index Date</td>
+										<td class="dec2"></td>
+									</tr>
+									<tr>
+										<td>Date of Burthday</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Address</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Social Security</td>
+										<td class="dec3"></td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="about__table" data-watch-threshold="0.85" data-watch-once data-watch>
+								<thead>
+									<tr>
+										<th>Description</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Race</td>
+										<td class="wolf"></td>
+									</tr>
+									<tr>
+										<td>Sex</td>
+										<td class="men"></td>
+									</tr>
+									<tr>
+										<td>Height</td>
+										<td class="dec4"></td>
+									</tr>
+									<tr>
+										<td>Skin Tone</td>
+										<td class="dec5"></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="about__notes" data-watch-threshold="0.85" data-watch-once data-watch>
+								<span>Notes</span>
+								<img src="img/about/Dangerous.svg" alt="Dangerous" />
+							</div>
+						</div>
+						<div class="about__text">
+							<p>$GIGAINU</p>
+							<br />
+							<p>The INU meta has survived every cycle. The GIGA meta turned confidence, strength and pure internet culture into a movement.</p>
+							<br />
+							<p>Now the two collide...</p>
+							<br />
+							<p>$GIGAINU is what happens when the internet’s most battle tested meme bloodline gets the GIGA upgrade — bigger, stronger and built for a new generation of degens.</p>
+							<br />
+							<p>The INU evolved.</p>
+							<p>The INU went GIGA.</p>
+							<br />
+							<p>$GIGAINU</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__how how">
+				<div class="how__bg">
+					<img src="img/how/bg.jpg" alt="BG" />
+				</div>
+				<div class="how__container">
+					<h2 class="how__title" data-watch-threshold="0.85" data-watch-once data-watch>
+						<span>How</span> to Buy
+					</h2>
+					<div class="how__main-image">
+						<img src="img/how/main.png" alt="Image" />
+					</div>
+					<div class="how__body">
+						<div class="how__items" data-watch-threshold="0.75" data-watch-once data-watch>
+							<div class="how__items-column">
+								<article class="how__item how__item--1" data-watch-threshold="0.75" data-watch-once data-watch>
+									<h3>1. Create a Solana Wallet</h3>
+									<p>
+										Download
+										<a href="https://phantom.com/get-started" target="_blank" rel="noopener noreferrer">Phantom</a>
+										or
+										<a href="https://www.solflare.com/download/" target="_blank" rel="noopener noreferrer">Solflare</a>,
+										then create and securely back up your Solana wallet.
+									</p>
+								</article>
+								<article class="how__item how__item--2" data-watch-threshold="0.75" data-watch-once data-watch>
+									<h3>2. Fund Your Wallet With SOL</h3>
+									<p>
+										Buy SOL directly in your wallet or transfer SOL from an exchange. Make sure you use the Solana network and keep a little SOL available for transaction fees.
+									</p>
+								</article>
+							</div>
+							<div class="how__items-column">
+								<article class="how__item how__item--3" data-watch-threshold="0.75" data-watch-once data-watch>
+									<h3>3. Open Pump.fun</h3>
+									<p>
+										Visit
+										<a href="https://pump.fun" target="_blank" rel="noopener noreferrer">Pump.fun</a>,
+										connect your Solana wallet, and search using the official $GIGAINU contract address once it is announced.
+									</p>
+								</article>
+								<article class="how__item how__item--4" data-watch-threshold="0.75" data-watch-once data-watch>
+									<h3>4. Buy $GIGAINU</h3>
+									<p>Enter the amount of SOL, review the transaction, and confirm the buy. Welcome to the $GIGAINU family.</p>
+								</article>
+							</div>
+						</div>
+						<div class="how__image">
+							<img src="img/how/01.png?v=shiba-black-suit-clean-3" alt="Muscular Shiba Inu in a black suit" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__tokenomics tokenomics">
+				<div class="tokenomics__top-grad"></div>
+				<div class="tokenomics__bg">
+					<img src="img/tokenomics/bg.jpg" alt="BG" />
+				</div>
+				<div class="tokenomics__body" data-watch-threshold="0.55" data-watch-once data-watch>
+					<div class="tokenomics__item tokenomics__item--1">
+						<span>Liquidity</span>
+						<span>Burned</span>
+					</div>
+					<div class="tokenomics__item tokenomics__item--2">
+						<span>Supply</span>
+						<span>1B</span>
+					</div>
+					<div class="tokenomics__item tokenomics__item--3">
+						<span>Buy/sell Tax</span>
+						<span>0</span>
+					</div>
+					<div class="tokenomics__ca">
+						<span>COMING SOON</span>
+					</div>
+				</div>
+			</section>
+			<section class="page__join join">
+				<div class="join__bg">
+					<img src="img/join/bg.jpg?v=pepe-brett-hq-1" alt="Pepe and Brett running through a noir city" />
+				</div>
+				<div class="join__container" data-watch-threshold="0.65" data-watch-once data-watch>
+					<h2 class="join__title" data-watch-threshold="0.75" data-watch-once data-watch>
+						<img src="img/join/title.png" alt="Join The Family" />
+					</h2>
+					<div class="join__image">
+						<img src="img/join/hero.png?v=shiba-white-cat-1" alt="Muscular Shiba Inu holding a pistol and a white cat" />
+					</div>
+					<div class="join__actions">
+						<a href="#" target="_blank" class="join__button">
+							<span>Buy now</span>
+							<i></i>
+						</a>
+						<div class="join__social">
+							<a href="#" target="_blank" class="join__social-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42" fill="none">
+									<path d="M36.2199 0.5L43.2278 0.5L27.8608 17.7446L45.7971 41.2058H31.6938L20.6953 26.9748L8.00799 41.2058H0.996322L17.4336 22.7603L0.226556 0.501877L14.6879 0.501877L24.6297 13.5094L36.2199 0.5ZM33.6421 37.0738H37.5249L12.5651 4.41615H8.3985L33.6421 37.0738Z" fill="#FFF7EE" />
+								</svg>
+								<i></i>
+							</a>
+							<a href="https://t.me/TonyOnSui" target="_blank" class="join__social-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="54" height="44" viewBox="0 0 54 44" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M48.2882 0.299006C48.9374 0.0342521 49.6476 -0.0570596 50.3447 0.0345735C51.0418 0.126207 51.7005 0.397435 52.2522 0.820029C52.8038 1.24262 53.2283 1.80113 53.4814 2.43742C53.7345 3.07372 53.8069 3.76453 53.6912 4.43797L47.6612 39.4562C47.0763 42.8341 43.2505 44.7712 40.0599 43.0886C37.3911 41.681 33.4273 39.5122 29.8627 37.2493C28.0804 36.1165 22.6212 32.4892 23.2988 29.9081C23.8811 27.7012 33.0858 19.408 38.3461 14.4774C40.4108 12.5402 39.4736 11.4228 37.0366 13.2046C30.9847 17.6287 21.269 24.3564 18.0575 26.2502C15.2244 27.9201 13.7486 28.2052 11.9855 27.9201C8.76874 27.4008 5.78624 26.5964 3.35268 25.6164C0.0642268 24.2928 0.234013 19.9043 3.36547 18.6265L48.2882 0.299006Z" fill="#FFF7EE" />
+								</svg>
+								<i></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__top-decor"></div>
+					<a href="#" data-goto=".about" class="footer__top-link">About</a>
+					<div class="footer__top-decor"></div>
+					<a href="#" data-goto=".how" class="footer__top-link">How to buy</a>
+					<div class="footer__top-decor"></div>
+					<a href="#" data-goto=".hero" class="footer__top-logo" aria-label="giga inu">
+						<span class="footer__brand-text"><span>giga</span><span>inu</span></span>
+					</a>
+					<div class="footer__top-decor"></div>
+					<a href="#" data-goto=".tokenomics__body" data-goto-top="160" class="footer__top-link">Tokenomics</a>
+					<div class="footer__top-decor"></div>
+					<a href="#" data-goto=".join" class="footer__top-link">Contact</a>
+					<div class="footer__top-decor"></div>
+				</div>
+				<div class="footer__top-mob">
+					<a href="#" data-goto=".hero" class="footer__top-mob-logo" aria-label="giga inu">
+						<span class="footer__brand-text"><span>giga</span><span>inu</span></span>
+					</a>
+					<div class="footer__top-mob-menu">
+						<a href="#" data-goto=".about" class="footer__top-mob-menu-item">About</a>
+						<a href="#" data-goto=".how" class="footer__top-mob-menu-item">How to buy</a>
+						<a href="#" data-goto=".tokenomics__body" data-goto-top="160" class="footer__top-mob-menu-item">Tokenomics</a>
+						<a href="#" data-goto=".join" class="footer__top-mob-menu-item">Contact</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<span>2024 © ALL RIGHTS RESERVED</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20241206205058"></script>
+</body>
+
+</html>

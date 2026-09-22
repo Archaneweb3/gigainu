@@ -1,0 +1,13 @@
+.laya-venv/
+.vercel/
+
+# Local/generated backup assets
+img/about/01-original.png
+img/about/01-soft-version.png
+img/about/01-cropped-muscular.png
+img/about/01-green-bg.png
+img/hero/bg-title-old.jpg
+img/how/01-before-edge-cleanup.png
+img/how/01-original-blue.png
+img/join/bg-original.jpg
+img/join/hero-original-wolf.png

@@ -1,0 +1,15 @@
+<svg width="150" height="42" viewBox="0 0 150 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @font-face {
+      font-family: "Adam Warren pro";
+      src: url("../../fonts/adamwarrenpro.woff2") format("woff2");
+    }
+    .label {
+      fill: #e22f36;
+      font-family: "Adam Warren pro", "Arial Black", sans-serif;
+      font-size: 31px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <text class="label" x="2" y="32">GIGA INU</text>
+</svg>
